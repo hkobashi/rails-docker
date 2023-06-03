@@ -13,7 +13,8 @@ jobs:
       shell: bash
       run: |
         # 必要なアップデート
-        apt-get install -y yarn
+        whoami
+        sudo apt-get install -y yarn
         docker-compose run web yarn install --check-files
         docker-compose run web yarn upgrade
         # イメージのビルド
