@@ -3,7 +3,7 @@ set -e
 
 # Rails に対応したファイル server.pid が存在しているかもしれないので削除する。
 rm -f /myapp/tmp/pids/server.pid
-# apt-get install -y yarn
+apt-get install -y yarn
 # apt remove cmdtest
 # apt remove yarn
 # curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
