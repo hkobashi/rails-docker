@@ -26,7 +26,7 @@ jobs:
         # docker-compose run web yarn install
         # docker-compose run web yarn upgrade 
         # イメージのビルド
-        docker-compose build
+        docker-compose build --no-cache
         # データベースの作成
         docker-compose run web rake db:create
       env:
