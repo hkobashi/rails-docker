@@ -15,16 +15,16 @@ jobs:
         # 必要なアップデート
         whoami
         # apt install -y yarn
-        docker-compose run web apt install -y yarn apt-utils
-        docker-compose run web apt remove cmdtest -y
-        docker-compose run web apt remove yarn -y
-        docker-compose run web apt autoremove -y
-        docker-compose run web curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-        docker-compose run web echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-        docker-compose run web apt update -y && apt install -y yarn
-        docker-compose run web yarn --version
-        docker-compose run web yarn install
-        docker-compose run web yarn upgrade 
+        # docker-compose run web apt install -y yarn apt-utils
+        # docker-compose run web apt remove cmdtest -y
+        # docker-compose run web apt remove yarn -y
+        # docker-compose run web apt autoremove -y
+        # docker-compose run web curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+        # docker-compose run web echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+        # docker-compose run web apt update -y && apt install -y yarn
+        # docker-compose run web yarn --version
+        # docker-compose run web yarn install
+        # docker-compose run web yarn upgrade 
         # イメージのビルド
         docker-compose build
         # データベースの作成
