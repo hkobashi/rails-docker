@@ -14,7 +14,7 @@ jobs:
       run: |
         # 必要なアップデート
         whoami
-        apt install -y yarn
+        # apt install -y yarn
         docker-compose run web apt install -y yarn apt-utils
         docker-compose run web apt remove cmdtest -y
         docker-compose run web apt remove yarn -y
